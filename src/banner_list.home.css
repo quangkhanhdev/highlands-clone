@@ -1,0 +1,17 @@
+.main_-anner-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-banner-list .banner {
+	display: block;
+	width: 100%;
+	/* img have blank space around */
+	display: grid;
+	place-items: center;
+}
+
+.main-banner-list img {
+	object-fit: contain;
+	width: inherit;
+}
