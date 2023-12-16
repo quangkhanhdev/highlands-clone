@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
+
+.main-slider {
+	--swiper-pagination-color: hsla(0, 0%, 100%, 0.85);
+	--swiper-pagination-bullet-size: 2vmin;
+	--swiper-pagination-bullet-horizontal-gap: 1vmin;
+	--swiper-pagination-bullet-opacity: 0.85;
+	--swiper-pagination-bottom: 4vmin;
+}
+
+.main-slider img {
+	object-fit: contain;
+	width: 100%;
+}
+
+.swiper-slider {
+	place-items: center;
+	display: grid;
+}
+
+.swiper-pagination-bullet-active {
+	outline: 2px solid var(--swiper-theme-color);
+	outline-offset: 3px;
+}

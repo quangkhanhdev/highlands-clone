@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/images/red_logo.ico" type="image/x-icon">
     <title>Highlands Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./src/root.css">
-    <script defer type="module" src="./src/root.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./src/header.css">
+    <link rel="stylesheet" href="./src/slider.home.css">
+    <script defer type="module" src="./src/header.js"></script>
+    <script defer type="module" src="./src/slider.home.js"></script>
 </head>
 
 <body>
@@ -17,35 +20,35 @@
                 <a href="/"><img src="./public/images/white_logo.png" alt="logo" /></a>
             </h1>
             <div class="col-2">
-                <div class="search small--hidden">
+                <div class="top-search small--hidden">
                     <div class="search-box">
                         <input type="text" placeholder="Từ khóa">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                     </div>
                 </div>
-                <ul class="nav-list small--hidden">
-                    <li><a href="#">quán cà phê</a></li>
-                    <li><a href="#">thực đơn</a></li>
-                    <li><a href="#">tin tức</a></li>
-                    <li><a href="#">về chúng tôi</a></li>
-                    <li><a href="#">nghề nghiệp</a></li>
-                    <li><a href="#">mua ngay</a></li>
-                    <li><a href="#">thẻ</a></li>
+                <ul class="top-nav small--hidden">
+                    <li class="nav-item"><a href="#">quán cà phê</a></li>
+                    <li class="nav-item"><a href="#">thực đơn</a></li>
+                    <li class="nav-item"><a href="#">tin tức</a></li>
+                    <li class="nav-item"><a href="#">về chúng tôi</a></li>
+                    <li class="nav-item"><a href="#">nghề nghiệp</a></li>
+                    <li class="nav-item"><a href="#">mua ngay</a></li>
+                    <li class="nav-item"><a href="#">thẻ</a></li>
                 </ul>
                 <button class="toggle-btn toggle--on large--hidden"><i class="fa-solid fa-bars"></i></button>
             </div>
         </div>
-        <div class="side-nav large--hidden" data-status="show">
+        <div class="side-nav large--hidden" data-status="hide">
             <div class="overlay"></div>
             <div class="content">
                 <ul class="nav-list">
-                    <li><a href="#">quán cà phê</a></li>
-                    <li><a href="#">thực đơn</a></li>
-                    <li><a href="#">tin tức</a></li>
-                    <li><a href="#">về chúng tôi</a></li>
-                    <li><a href="#">nghề nghiệp</a></li>
-                    <li><a href="#">mua ngay</a></li>
-                    <li><a href="#">thẻ</a></li>
+                    <li class="nav-item"><a href="#">quán cà phê</a></li>
+                    <li class="nav-item"><a href="#">thực đơn</a></li>
+                    <li class="nav-item"><a href="#">tin tức</a></li>
+                    <li class="nav-item"><a href="#">về chúng tôi</a></li>
+                    <li class="nav-item"><a href="#">nghề nghiệp</a></li>
+                    <li class="nav-item"><a href="#">mua ngay</a></li>
+                    <li class="nav-item"><a href="#">thẻ</a></li>
                 </ul>
                 <button class="toggle-btn toggle--off"><i class="fa-solid fa-xmark"></i></button>
                 <div class="search">
@@ -57,6 +60,46 @@
             </div>
         </div>
     </header>
+    <main class="main-slider swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/DC/Giftcard-Landing-page_PHASE-2Giftcard-Festive.png"
+                    alt="slide 1" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/DC/digital_website-1440x460-2.png"
+                    alt="slide 2" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/HC_Brand_Refresh_Master_KV_1440x460.png"
+                    alt="slide 3" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/BrandFresh/Love.png" alt="slide 4"
+                    loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/BrandFresh/Passion.png" alt="slide 5"
+                    loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/BrandFresh/Respect.png" alt="slide 6"
+                    loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/BrandFresh/Support-update_2.png"
+                    alt="slide 7" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </main>
 </body>
 
 </html>

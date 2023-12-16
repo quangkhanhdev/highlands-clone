@@ -1,22 +1,21 @@
 header {
 	position: relative;
 	z-index: 1;
+	overflow: hidden;
 	padding: 1rem 0;
 	background-color: var(--primary-color);
 	border-top: 10px solid var(--secondary-color);
-	overflow: hidden;
 }
 
 header .wrapper {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	gap: var(--gutter);
 }
 
 #logo img {
 	width: 64px;
-	/*  */
+
 	@media (min-width: 992px) {
 		width: 128px;
 	}
@@ -30,8 +29,8 @@ header .col-2 {
 	gap: 3rem;
 }
 
-header .search {
-	font-size: 1.125em;
+header .top-search {
+	font-size: 1em;
 }
 
 .search-box {
@@ -39,7 +38,7 @@ header .search {
 	position: relative;
 	z-index: 1;
 	font-size: inherit;
-	/*  */
+
 	input {
 		flex-basis: 100%;
 		padding: 0.25em 0.5em;
@@ -66,32 +65,23 @@ header .search {
 	}
 }
 
-header .nav-list {
+header .top-nav {
 	display: flex;
 	flex-flow: row nowrap;
 	gap: 0.75em;
 	font-size: 1.125em;
 	list-style-type: none;
-	/*  */
-	& > li {
-		position: relative;
-		transition: all 0.3s linear;
-	}
+}
 
-	& > li::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 5vmin;
-		transition: background-color 0.3s linear;
-	}
+header .top-nav .nav-item {
+	position: relative;
+	transition: background-color 0.3s;
 
-	& > li:hover,
-	& > li:hover::after {
+	&:hover {
 		background-color: var(--secondary-color);
 	}
 
-	& > li > * {
+	& > * {
 		display: block;
 		padding: 0.5em;
 		font-size: 1em;
@@ -102,13 +92,13 @@ header .nav-list {
 }
 
 .toggle-btn {
-	font-size: 1.5em;
 	width: 1.5em;
 	height: 1.5em;
-	border: none;
-	cursor: pointer;
 	transition: filter 0.3s;
-	/*  */
+	cursor: pointer;
+	border: none;
+	font-size: 1.5em;
+
 	&:hover {
 		filter: brightness(0.8);
 	}
@@ -130,68 +120,70 @@ header .toggle-btn.toggle--on {
 	z-index: 111;
 	top: 0;
 	left: 0;
+	visibility: hidden;
 	width: 100%;
 	height: 100%;
-	background-color: hsla(0, 0%, 0%, 0.3);
-	visibility: hidden;
 	transition: visibility;
+	background-color: hsla(0, 0%, 0%, 0.3);
 	cursor: not-allowed;
 }
 
 .side-nav .content {
+	translate: 120%;
 	position: fixed;
 	z-index: 112;
 	top: 0;
 	right: 0;
-	background-color: hsl(0, 0%, 96%);
 	transition: translate 0.3s;
-	translate: 120%;
+	background-color: hsl(0, 0%, 96%);
 }
 
 .side-nav .content .toggle--off {
+	translate: -100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	background-color: inherit;
 	border: 0px solid hsla(0, 0%, 0%, 0.3);
 	border-width: 0 0 1px 1px;
-	translate: -100%;
 }
 
 .side-nav .content .search {
-	border: 0px solid hsla(0, 0%, 0%, 0.3);
-	border-width: 0 0 1px 1px;
 	padding: 1em;
 	background-color: hsl(0, 0%, 75%);
+	border: 0px solid hsla(0, 0%, 0%, 0.3);
+	border-width: 0 0 1px 1px;
 }
 
 .side-nav .nav-list {
+	display: flex;
 	flex-flow: column nowrap;
 	gap: 0;
 	border: 0px solid hsla(0, 0%, 0%, 0.3);
 	border-left-width: 1px;
+	font-size: 1.125em;
+	list-style-type: none;
+}
 
-	& > li {
-		border-bottom: 1px solid hsla(0, 0%, 0%, 0.3);
-	}
+.side-nav .nav-list .nav-item {
+	border-bottom: 1px solid hsla(0, 0%, 0%, 0.3);
 
-	& > li:hover {
-		color: var(--foreground);
-		background-color: var(--primary-color);
-	}
-
-	& > li:hover > * {
-		color: currentColor;
-	}
-
-	& > li::after {
-		content: none;
-	}
-
-	& > li > * {
-		color: hsl(0, 0%, 20%);
-		font-weight: 500;
+	& > * {
+		display: block;
 		padding: 0.75em 1em;
+		font-size: 1em;
+		font-weight: 500;
+		color: hsl(0, 0%, 20%);
+		text-transform: uppercase;
+	}
+
+	&:hover {
+		background-color: var(--primary-color);
+		color: var(--foreground);
+	}
+
+	&:hover > * {
+		color: currentColor;
 	}
 }
 
