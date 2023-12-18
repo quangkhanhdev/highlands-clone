@@ -7,6 +7,10 @@
 	--secondary-color: hsl(18.5, 30.7%, 24.9%);
 	--foreground: hsl(0, 0%, 100%);
 	--gutter: 1.5rem;
+
+	@media (max-width: 996px) {
+		--gutter: calc(1.5rem / 2);
+	}
 }
 
 *,
@@ -39,13 +43,9 @@ body {
 
 /* mobile first */
 .wrapper {
-	max-width: calc(1200px);
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 var(--gutter);
-	/* large device */
-	@media (max-width: 996px) {
-		padding: 0 calc(var(--gutter) / 2);
-	}
 }
 
 .small--hidden {
