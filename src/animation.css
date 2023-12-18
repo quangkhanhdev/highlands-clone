@@ -1,15 +1,13 @@
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 .animation--fadeIn {
-  animation: fadeIn 2s ease 0s 1 normal forwards;
+	animation: fadeIn 2s ease 0s 1 normal forwards;
 }
