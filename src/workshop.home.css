@@ -1,10 +1,10 @@
-.main-workshop {
+.homepage-workshop {
 	display: flex;
 	flex-flow: column nowrap;
 }
 
 @media (min-width: 996px) {
-	.main-workshop {
+	.homepage-workshop {
 		flex-direction: row;
 	}
 
@@ -17,14 +17,14 @@
 	}
 }
 
-.main-workshop > section {
+.homepage-workshop > section {
 	flex-basis: 100%;
 	padding: var(--gutter);
 	background-position: center center;
 	background-size: cover;
 }
 
-.main-workshop .half-wrapper {
+.homepage-workshop .half-wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -34,25 +34,25 @@
 	max-width: calc(1200px / 2 - var(--gutter) * 2);
 }
 
-.main-workshop .title {
+.homepage-workshop .title {
 	-webkit-text-stroke: 1px black;
 	font-size: 1.75em;
 	color: var(--foreground);
 	text-transform: uppercase;
 }
 
-.main-workshop .space {
+.homepage-workshop .space {
 	min-height: 30vmin;
 }
 
-.main-workshop .news-list {
+.homepage-workshop .news-list {
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 1rem;
 	list-style-type: none;
 }
 
-.main-workshop .news-list > li > a {
+.homepage-workshop .news-list > li > a {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;

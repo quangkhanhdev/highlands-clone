@@ -9,5 +9,5 @@
 }
 
 .animation--fadeIn {
-	animation: fadeIn 2s ease 0s 1 normal forwards;
+	animation: 3s ease-out 0.3s fadeIn;
 }

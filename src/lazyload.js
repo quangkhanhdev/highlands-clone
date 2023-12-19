@@ -17,6 +17,7 @@ function ready() {
 
 function load(lazyImage) {
 	const src = lazyImage.getAttribute("lazy-src");
+	lazyImage.classList.add("animation--fadeIn");
 	lazyImage.setAttribute("src", src);
 	lazyImage.removeAttribute("lazy-src");
 }

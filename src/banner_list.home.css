@@ -1,9 +1,9 @@
-.main_-anner-list {
+.homepage-banner-list {
 	display: flex;
 	flex-direction: column;
 }
 
-.main-banner-list .banner {
+.homepage-banner-list .banner {
 	display: block;
 	/* width: 100%; */
 	/* img have blank space around */
@@ -11,7 +11,7 @@
 	place-items: center;
 }
 
-.main-banner-list img {
+.homepage-banner-list img {
 	object-fit: contain;
 	max-width: 100%;
 }

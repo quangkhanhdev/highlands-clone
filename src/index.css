@@ -36,7 +36,7 @@ img {
 
 html {
 	scroll-behavior: smooth;
-	background-color: var(--background-color);
+	background-color: var(--secondary-color);
 	font-size: 10px;
 	font-family: Roboto, system-ui, -apple-system, sans-serif;
 }
@@ -62,4 +62,8 @@ body {
 	@media (min-width: 996px) {
 		display: none !important;
 	}
+}
+
+.order--2 {
+	order: 2;
 }
