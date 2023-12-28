@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
 	--background-color: hsl(0, 0%, 93.3%);
@@ -28,6 +28,7 @@ a {
 
 img {
 	vertical-align: middle;
+	max-width: 100%;
 
 	&[lazy-src] {
 		min-height: 150px;
@@ -36,13 +37,17 @@ img {
 
 html {
 	scroll-behavior: smooth;
-	background-color: var(--secondary-color);
+	background-color: var(--background-color);
 	font-size: 10px;
 	font-family: Roboto, system-ui, -apple-system, sans-serif;
 }
 
 body {
 	font-size: 1.6rem;
+}
+
+.font--title {
+	font-family: "Josefin Sans", sans-serif;
 }
 
 /* mobile first */

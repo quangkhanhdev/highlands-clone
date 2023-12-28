@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/images/red_logo.ico" type="image/x-icon">
+    <title>Sản phẩm | Highlands Clone</title>
+    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/animation.css">
+    <link rel="stylesheet" href="./src/header.css">
+    <link rel="stylesheet" href="./src/footer.css">
+    <link rel="stylesheet" href="./src/menu.products.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script defer type="module" src="./src/menu.products.js"></script>
+    <script defer type="module" src="./src/lazyload.js"></script>
+    <script defer type="module" src="./src/header.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1 id="logo">
+                <a href="/"><img src="./public/images/white_logo.png" alt="logo" /></a>
+            </h1>
+            <div class="col-2">
+                <div class="top-search small--hidden">
+                    <div class="search-box">
+                        <input type="text" placeholder="Từ khóa">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+                <ul class="top-nav small--hidden">
+                    <li class="nav-item"><a href="#">quán cà phê</a></li>
+                    <li class="nav-item"><a href="./menu.html">thực đơn</a></li>
+                    <li class="nav-item"><a href="#">tin tức</a></li>
+                    <li class="nav-item"><a href="./products.html">sản phẩm</a></li>
+                    <li class="nav-item"><a href="#">nghề nghiệp</a></li>
+                    <li class="nav-item"><a href="#">mua ngay</a></li>
+                    <li class="nav-item"><a href="#">thẻ</a></li>
+                </ul>
+                <button class="toggle-btn toggle--on large--hidden"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div class="side-nav large--hidden" data-status="hide">
+            <div class="overlay"></div>
+            <div class="content">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">quán cà phê</a></li>
+                    <li class="nav-item"><a href="./menu.html">thực đơn</a></li>
+                    <li class="nav-item"><a href="#">tin tức</a></li>
+                    <li class="nav-item"><a href="./products.html">sản phẩm</a></li>
+                    <li class="nav-item"><a href="#">nghề nghiệp</a></li>
+                    <li class="nav-item"><a href="#">mua ngay</a></li>
+                    <li class="nav-item"><a href="#">thẻ</a></li>
+                </ul>
+                <button class="toggle-btn toggle--off"><i class="fa-solid fa-xmark"></i></button>
+                <div class="search">
+                    <div class="search-box">
+                        <input type="text" placeholder="Từ khóa">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu">
+        <div class="wrapper">
+            <div class="heading">
+                <h3 class="title font--title">CÀ PHÊ</h3>
+                <p class="desc">
+                    Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những
+                    vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Highlands Coffee chúng tôi tự
+                    hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế.
+                </p>
+            </div>
+            <div class="product-slider">
+                <div class="slider-navigation">
+                    <span class="btn--prev btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                    <span class="btn--next btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/04_2023/New_product/thumbs/270_crop_HLC_New_logo_5.1_Products__CARAMEL_MACCHIATTO.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="#" class="name font--title">
+                                    caramel macchiato
+                                </a>
+                                <span class="price">
+                                    Giá: <strong>69,000 VNĐ</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="heading">
+                <h3 class="title font--title">FREEZE</h3>
+                <p class="desc">
+                    Sảng khoái với thức uống đá xay phong cách Việt. Freeze là thức uống đá xay mát lạnh được pha chế từ
+                    những nguyên liệu thuần túy của Việt Nam.
+                </p>
+            </div>
+            <div class="product-slider">
+                <div class="slider-navigation">
+                    <span class="btn--prev btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                    <span class="btn--next btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/06_2023/thumbs/270_crop_HLC_New_logo_5.1_Products__FREEZE_TRA_XANH.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="#" class="name font--title">
+                                    Freeze Trà Xanh
+                                </a>
+                                <span class="price">
+                                    Giá: <strong>55,000 VNĐ</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="heading">
+                <h3 class="title font--title">TRÀ</h3>
+                <p class="desc">
+                    Hương vị tự nhiên, thơm ngon của Trà Việt với phong cách hiện đại tại Highlands Coffee sẽ giúp bạn
+                    gợi mở vị giác của bản thân và tận hưởng một cảm giác thật khoan khoái, tươi mới.
+                </p>
+            </div>
+            <div class="product-slider">
+                <div class="slider-navigation">
+                    <span class="btn--prev btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                    <span class="btn--next btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/11_2023/thumbs/270_crop_3P_COMBO_Tea_Berry.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <p class="name font--title">
+                                    Trà Quả Mọng Anh Đào
+                                </p>
+                                <span class="price">
+                                    Giá: <strong>59,000 VNĐ</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <ul class="social-networks">
+                <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <p class="copyright">© 2018 Highlands Coffee. All rights reserved</p>
+            <div class="newsletter">
+                <i class="fa-regular fa-paper-plane"></i>
+                <p>Đăng ký để nhận bản tin</p>
+            </div>
+            <a class="email" href="mailto:customerservice@highlandscoffee.com.vn"><i
+                    class="fa-regular fa-envelope"></i><span>customerservice@highlandscoffee.com.vn<span /></a>
+        </div>
+    </footer>
+</body>
+
+</html>
