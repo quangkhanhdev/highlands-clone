@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="public/images/red_logo.ico" type="image/x-icon">
     <title>Sản phẩm | Highlands Clone</title>
-    <link rel="stylesheet" href="./src/index.css">
-    <link rel="stylesheet" href="./src/animation.css">
-    <link rel="stylesheet" href="./src/header.css">
-    <link rel="stylesheet" href="./src/footer.css">
-    <link rel="stylesheet" href="./src/menu.products.css">
+    <link rel="shortcut icon" href="/shared/images/red_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/shared/css/index.css">
+    <link rel="stylesheet" href="/shared/css/animation.css">
+    <link rel="stylesheet" href="/shared/css/header.css">
+    <link rel="stylesheet" href="/shared/css/footer.css">
+    <script defer type="module" src="/shared/js/header.js"></script>
+    <script defer type="module" src="/shared/js/lazyload.js"></script>
+    <link rel="stylesheet" href="menu.products.css">
+    <script defer type="module" src="menu.products.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <script defer type="module" src="./src/menu.products.js"></script>
-    <script defer type="module" src="./src/lazyload.js"></script>
-    <script defer type="module" src="./src/header.js"></script>
 
 </head>
 
@@ -22,7 +22,7 @@
     <header>
         <div class="wrapper">
             <h1 id="logo">
-                <a href="/"><img src="./public/images/white_logo.png" alt="logo" /></a>
+                <a href="/"><img src="/shared/images/white_logo.png" alt="logo" /></a>
             </h1>
             <div class="col-2">
                 <div class="top-search small--hidden">
@@ -33,9 +33,9 @@
                 </div>
                 <ul class="top-nav small--hidden">
                     <li class="nav-item"><a href="#">quán cà phê</a></li>
-                    <li class="nav-item"><a href="./menu.html">thực đơn</a></li>
+                    <li class="nav-item"><a href="/menu/index.html">thực đơn</a></li>
                     <li class="nav-item"><a href="#">tin tức</a></li>
-                    <li class="nav-item"><a href="./products.html">sản phẩm</a></li>
+                    <li class="nav-item active"><a href="#">sản phẩm</a></li>
                     <li class="nav-item"><a href="#">nghề nghiệp</a></li>
                     <li class="nav-item"><a href="#">mua ngay</a></li>
                     <li class="nav-item"><a href="#">thẻ</a></li>
@@ -48,9 +48,9 @@
             <div class="content">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#">quán cà phê</a></li>
-                    <li class="nav-item"><a href="./menu.html">thực đơn</a></li>
+                    <li class="nav-item"><a href="/menu/index.html">thực đơn</a></li>
                     <li class="nav-item"><a href="#">tin tức</a></li>
-                    <li class="nav-item"><a href="./products.html">sản phẩm</a></li>
+                    <li class="nav-item active"><a href="#">sản phẩm</a></li>
                     <li class="nav-item"><a href="#">nghề nghiệp</a></li>
                     <li class="nav-item"><a href="#">mua ngay</a></li>
                     <li class="nav-item"><a href="#">thẻ</a></li>
@@ -89,13 +89,13 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <div class="image">
-                                <a href="#">
+                                <a href="/products/caramel-machiato.html">
                                     <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/04_2023/New_product/thumbs/270_crop_HLC_New_logo_5.1_Products__CARAMEL_MACCHIATTO.jpg"
                                         alt="">
                                 </a>
                             </div>
                             <div class="content">
-                                <a href="#" class="name font--title">
+                                <a href="/products/caramel-machiato.html" class="name font--title">
                                     caramel macchiato
                                 </a>
                                 <span class="price">
@@ -104,7 +104,97 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--  -->
+                    <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/04_2023/New_product/thumbs/270_crop_HLC_New_logo_5.1_Products__MOCHA.jpg"
+                                        alt="Mocha Macchiato">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="/products/caramel-machiato.html" class="name font--title">
+                                    Mocha Macchiato
+                                </a>
+                                <span class="price">
+                                    Giá: <strong>69,000 VNĐ</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="/products/caramel-machiato.html">
+                                    <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/04_2023/New_product/thumbs/270_crop_HLC_New_logo_5.1_Products__CAPPUCINO.jpg"
+                                        alt="Cappucino">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="/products/caramel-machiato.html" class="name font--title">
+                                    Cappucino
+                                </a>
+                                <span class="price">
+                                    Giá: <strong>65,000 VNĐ</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="/products/caramel-machiato.html">
+                                    <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/04_2023/New_product/thumbs/270_crop_HLC_New_logo_5.1_Products__AMERICANO_NONG.jpg"
+                                        alt="Americano">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="/products/caramel-machiato.html" class="name font--title">
+                                    Americano
+                                </a>
+                                <span class="price">
+                                    Giá: <strong>45,000 VNĐ</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="/products/caramel-machiato.html">
+                                    <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/04_2023/New_product/thumbs/270_crop_HLC_New_logo_5.1_Products__EXPRESSO.jpg"
+                                        alt="Expresso">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="/products/caramel-machiato.html" class="name font--title">
+                                    Espresso
+                                </a>
+                                <span class="price">
+                                    Giá: <strong>45,000 VNĐ</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="/products/caramel-machiato.html">
+                                    <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/04_2023/New_product/thumbs/270_crop_HLC_New_logo_5.1_Products__LATTE_1.jpg"
+                                        alt="Latte">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a href="/products/caramel-machiato.html" class="name font--title">
+                                    Latte
+                                </a>
+                                <span class="price">
+                                    Giá: <strong>65,000 VNĐ</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
