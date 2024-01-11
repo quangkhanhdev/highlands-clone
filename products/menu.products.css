@@ -1,127 +1,126 @@
 .menu {
-	position: relative;
-	z-index: 0;
-	padding: 3rem 0;
-	background-color: #fff;
+  position: relative;
+  z-index: 0;
+  padding: 3rem 0;
+  background-color: #fff;
 }
 
 .menu .wrapper {
-	margin-bottom: 3rem;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	border-bottom: 1px solid hsla(0, 21%, 66%, 0.3);
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid hsla(0, 21%, 66%, 0.3);
 
-	&:last-child {
-		border-bottom: none;
-	}
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .menu .heading {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 2rem;
-	margin-bottom: 3rem;
-	color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
 
-	.title {
-		font-size: 3em;
-		font-weight: 700;
-	}
+  .title {
+    font-size: 3em;
+    font-weight: 700;
+  }
 
-	.desc {
-		line-height: 1.5em;
-		text-align: justify;
-	}
+  .desc {
+    line-height: 1.5em;
+    text-align: justify;
+  }
 }
 
 .menu .slider-navigation {
-	display: flex;
-	justify-content: center;
-	gap: 2.5rem;
-	position: relative;
-	margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
-	display: inline-block;
-	width: 1.5em;
-	height: 1.5em;
-	transition: color 0.3s;
-	background-color: var(--background-color);
-	cursor: pointer;
-	font-size: 1.5em;
-	line-height: 1.5em;
-	color: hsla(0, 0%, 0%, 0.3);
-	text-align: center;
-	vertical-align: middle;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  transition: color 0.3s;
+  background-color: var(--background-color);
+  cursor: pointer;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: hsla(0, 0%, 0%, 0.3);
+  text-align: center;
+  vertical-align: middle;
 
-	&:focus-visible,
-	&:hover,
-	&:active {
-		color: var(--primary-color);
-	}
+  &:focus-visible,
+  &:active {
+    color: var(--primary-color);
+  }
 }
 
 .product-slider {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .product-item {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .product-item .image {
-	background-color: #fff;
-	border: 1px solid hsla(0, 0%, 0%, 0.3);
+  background-color: #fff;
+  border: 1px solid hsla(0, 0%, 0%, 0.3);
 
-	a {
-		place-items: center center;
-		display: grid;
-		width: 100%;
-	}
+  a {
+    place-items: center center;
+    display: grid;
+    width: 100%;
+  }
 
-	img {
-		scale: 0.85;
-		transition: scale 0.3s;
-	}
+  img {
+    scale: 0.85;
+    transition: scale 0.3s;
+  }
 
-	a:hover > img {
-		scale: 1;
-	}
+  a:hover > img {
+    scale: 1;
+  }
 }
 
 .product-item .content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
-	.name {
-		font-size: 1.25em;
-		font-weight: 600;
-		color: var(--secondary-color);
-		text-align: center;
-		text-transform: uppercase;
-		transition: color 0.3s;
-		cursor: pointer;
-	}
+  .name {
+    transition: color 0.3s;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-	.name:hover,
-	.name:focus,
-	.name:focus-visible {
-		color: var(--primary-color);
-	}
+  .name:hover,
+  .name:focus,
+  .name:focus-visible {
+    color: var(--primary-color);
+  }
 
-	.price {
-		font-size: 0.9em;
-	}
+  .price {
+    font-size: 0.9em;
+  }
 
-	.price strong {
-		color: var(--secondary-color);
-	}
+  .price strong {
+    color: var(--secondary-color);
+  }
 }
